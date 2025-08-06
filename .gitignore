@@ -14,9 +14,7 @@
 
 
 # Environments
-.env
 .venv
-env/
 env_dir/
 venv/
 ENV/
