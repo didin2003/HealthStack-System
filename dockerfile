@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     libsqlite3-dev \
     && rm -rf /var/lib/apt/lists/*
+RUN apt-get update && apt-get install -y python3-tk
 
 # Copy requirements and install pip dependencies
 COPY requirements.txt /app/
