@@ -12,17 +12,18 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 
 from pathlib import Path
 import os
+import sys
 import environ
 from dotenv import load_dotenv
 load_dotenv()
-import sys
-env_path = BASE_DIR / '.env'
-print("DEBUG: Checking .env path:", env_path, "exists?", env_path.exists(), file=sys.stderr)
-
 # django-environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+env_path = BASE_DIR / '.env'
+print("DEBUG: Checking .env path:", env_path, "exists?", env_path.exists(), file=sys.stderr)
+
 
 ### setting up env
 env = environ.Env()
