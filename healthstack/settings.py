@@ -40,7 +40,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG')
 
-ALLOWED_HOSTS = ['192.168.0.100', '127.0.0.1','5749-103-109-53-5.in.ngrok.io', '3.232.109.123','a11e138d9d43f46db89d523246c183a0-291287995.eu-north-1.elb.amazonaws.com']
+ALLOWED_HOSTS = ['192.168.0.100', '127.0.0.1','5749-103-109-53-5.in.ngrok.io', '3.232.109.123','a11e138d9d43f46db89d523246c183a0-291287995.eu-north-1.elb.amazonaws.com', '13.61.245.205']
 # ALLOWED_HOSTS = ['mobile view', 'local host','ngrok -- keeps on changing']
 
 # Application definition
