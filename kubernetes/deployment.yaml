@@ -21,7 +21,7 @@ spec:
           env:
             - name: EXTRA_ALLOWED_HOSTS
               value: |
-                a6183fcdd6dc64fb79deb5742b8baf19-1690874756.eu-north-1.elb.amazonaws.com
+                ab18087d8a1634d66b5397ce3fd1be6c-1470587482.eu-north-1.elb.amazonaws.com
             - name: POD_IP
               valueFrom:
                 fieldRef:
