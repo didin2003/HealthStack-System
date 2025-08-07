@@ -18,5 +18,13 @@ spec:
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
+          env:
+            - name: EXTRA_ALLOWED_HOSTS
+              value: |
+                a11e138d9d43f46db89d523246c183a0-291287995.eu-north-1.elb.amazonaws.com
+            - name: POD_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
       imagePullSecrets:
         - name: regcred
